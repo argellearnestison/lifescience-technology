@@ -178,8 +178,15 @@ body {
 .navbar-nav {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+}
+
+.navbar-nav > .nav-item {
+  margin-left: 20px;
+}
+.navbar-nav > .nav-item:first-child {
+  margin-left: 0;
 }
 
 .navbar-custom {
@@ -280,11 +287,11 @@ body {
 }
 
 .nav-item.login-icon {
-  margin-left: 24px !important;
+  margin-left: 48px !important;
 }
 
 .nav-item.search-icon {
-  margin-left: 24px !important;
+  margin-left: 48px !important;
 }
 
 .hero-content {
@@ -295,4 +302,83 @@ body {
   max-width: 920px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+/* Login button hover overlay effect */
+.login-btn {
+  position: relative;
+}
+.login-btn::after {
+  content: 'Login';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scaleX(0);
+  width: auto;
+  height: 100%;
+  background: #0C592E;
+  color: #fff;
+  font-family: 'Trenda', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  padding: 0 18px;
+  white-space: nowrap;
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+  z-index: 10;
+}
+.login-btn:hover::after, .login-btn:focus::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scaleX(1);
+}
+.login-btn svg {
+  position: relative;
+  z-index: 3;
+}
+/* Search button hover overlay effect */
+.search-btn {
+  position: relative;
+}
+.search-btn::after {
+  content: 'Search';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scaleX(0);
+  width: auto;
+  height: 100%;
+  background: #0C592E;
+  color: #fff;
+  font-family: 'Trenda', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  padding: 0 18px;
+  white-space: nowrap;
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+  z-index: 10;
+}
+.search-btn:hover::after, .search-btn:focus::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scaleX(1);
+}
+.search-btn svg {
+  position: relative;
+  z-index: 3;
+} 
+
+.nav-item .btn-contact {
+  margin-left: 36px;
 } 
