@@ -1314,3 +1314,18 @@ body {
 .footer-socials span {
   text-align: center;
 } 
+
+@media (max-width: 1300px) {
+  .navbar-nav > .nav-item {
+    padding-left: 8px;
+  }
+  .nav-item.login-icon {
+    margin-left: 12px !important;
+  }
+  .nav-item.search-icon {
+    margin-left: 12px !important;
+  }
+  .nav-item .btn-contact {
+    margin-left: 8px;
+  }
+} 
