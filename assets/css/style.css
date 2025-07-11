@@ -99,6 +99,7 @@ body {
   font-family: 'Trenda', Arial, Helvetica, sans-serif;
   background: #fff;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .hero-section {

@@ -30,4 +30,14 @@ window.addEventListener('scroll', function() {
     footer.style.display = 'none';
     setFooterPushHeight();
   }
+
+  // Navbar hide/show logic
+  var navbar = document.querySelector('nav.navbar');
+  if (navbar) {
+    if (window.scrollY > 1500) {
+      navbar.style.display = 'none';
+    } else {
+      navbar.style.display = '';
+    }
+  }
 }); 
