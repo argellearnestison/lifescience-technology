@@ -32,7 +32,7 @@ window.addEventListener('scroll', function() {
   }
 
   // Navbar hide/show logic
-  var navbar = document.querySelector('nav.navbar');
+  var navbar = document.querySelector('.hero-section');
   if (navbar) {
     if (window.scrollY > 1500) {
       navbar.style.display = 'none';
